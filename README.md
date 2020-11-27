@@ -1,6 +1,6 @@
 # creditshelf-collisions-map
 
-### Prerequesite
+### Prerequisite
 
 Python 3.9.0 available at https://www.python.org/downloads/
 
