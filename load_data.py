@@ -12,36 +12,31 @@ my_col = Collision()
 my_sql = SQLite()
 my_stat = Station()
 
-collision_creation_query = 'CREATE TABLE "Collision" (' \
-                           '"collision_id"	INTEGER,' \
-                           '"zip_code"	TEXT,' \
-                           '"crash_date"	TEXT,' \
-                           '"crash_time"	TEXT,' \
-                           '"borough"	TEXT,' \
-                           '"latitude"	TEXT,' \
-                           '"longitude"	TEXT,' \
-                           '"location"	TEXT,' \
-                           '"on_street_name"	TEXT ,' \
-                           '"cross_street_name"	TEXT,' \
-                           '"off_street_name"	TEXT,' \
-                           '"number_of_cyclist_injured"	INTEGER,' \
-                           '"number_of_cyclist_killed"	INTEGER,' \
-                           'PRIMARY KEY("collision_id"));'
+collision_creation_query = '''CREATE TABLE "Collision" 
+("collision_id" INTEGER,
+"zip_code" TEXT,
+"crash_date" TEXT,
+"crash_time" TEXT,
+"borough" TEXT,
+"latitude" TEXT,
+"longitude" TEXT,
+"location" TEXT,
+"on_street_name" TEXT ,
+"cross_street_name" TEXT,
+"off_street_name" TEXT,
+"number_of_cyclist_injured" INTEGER,
+"number_of_cyclist_killed" INTEGER,
+PRIMARY KEY("collision_id"))'''
 
-vehicle_creation_query = 'CREATE TABLE "Vehicle" (' \
-                         '"index"	INTEGER,' \
-                         '"collision_id"	INTEGER,' \
-                         '"type_code" TEXT,' \
-                         '"contributing_factor" TEXT,' \
-                         'FOREIGN KEY("collision_id") REFERENCES "Collision"("collision_id"),' \
-                         'PRIMARY KEY("index" AUTOINCREMENT));'
+vehicle_creation_query = '''CREATE TABLE "Vehicle"
+ ("index"	INTEGER,"collision_id"	INTEGER,
+ "type_code" TEXT,"contributing_factor" TEXT,
+ FOREIGN KEY("collision_id") REFERENCES "Collision"("collision_id"),PRIMARY KEY("index" AUTOINCREMENT))'''
 
-station_creation_query = 'CREATE TABLE "Station" (' \
-                         '"id"	INTEGER,' \
-                         '"name"	TEXT,' \
-                         '"latitude" REAL,' \
-                         '"longitude" REAL,' \
-                         'PRIMARY KEY("id"));'
+station_creation_query = '''CREATE TABLE "Station"
+ ("id"	INTEGER,
+ "name"	TEXT,"latitude" REAL,
+ "longitude" REAL,PRIMARY KEY("id"))'''
 
 my_sql.create_table('Collision', collision_creation_query)
 my_sql.create_table('Vehicle', vehicle_creation_query)

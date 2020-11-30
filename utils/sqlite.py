@@ -8,7 +8,7 @@ from pathlib import Path
 
 class SQLite:
     def __init__(self):
-        self.database = 'mvc_collisions.db'
+        self.database = 'mvc_collisions.sqlite'
         parent_path = Path(os.path.abspath(os.path.dirname(__file__))).parent
         self.dir_name = os.path.join(parent_path, 'data')
 
