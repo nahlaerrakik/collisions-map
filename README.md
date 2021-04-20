@@ -21,9 +21,7 @@ pip install flask
 ```
 ### How to run the project
 ```sh
-python load_data.py
-
-python run_app.py
+python run.py
 ```
 Go to http://127.0.0.1:5000/ to visualize the map
 
