@@ -2,3 +2,5 @@ requests
 pandas
 folium
 flask
+Flask-SQLAlchemy
+SQLAlchemy

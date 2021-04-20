@@ -11,7 +11,7 @@ class Map:
     def __init__(self, starting_latitude, starting_longitude):
         self.map = folium.Map(location=[starting_latitude, starting_longitude], tiles='Open Street Map', zoom_start=10,
                               width='90%', height='90%')
-        parent_path = Path(os.path.abspath(os.path.dirname(__file__))).parent
+        parent_path = Path(os.path.abspath(os.path.dirname(__file__)))
         self.dir_name = os.path.join(os.path.join(parent_path, 'templates'), 'index.html')
 
     def add_marker(self, location, popup, color):
