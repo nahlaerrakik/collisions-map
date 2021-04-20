@@ -1,4 +1,4 @@
-# creditshelf-collisions-map
+# collisions-map
 
 ### Prerequisite
 
@@ -9,7 +9,7 @@ Python 3.9.0 available at https://www.python.org/downloads/
 Download project or clone this repository using:
 
 ```sh
-$ git clone https://github.com/nahlaerrakik/creditshelf-collisions-map.git
+$ git clone https://github.com/nahlaerrakik/collisions-map.git
 ```
 Install packages in requierement.txt file. If you are using an IDE (PyCharm), allow it to install the required dependencies automatically.
 
