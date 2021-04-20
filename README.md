@@ -28,4 +28,4 @@ Go to http://127.0.0.1:5000/ to visualize the map
 
 
 ###  Map
-![](templates/map.PNG)
+![](application/templates/map.PNG)
