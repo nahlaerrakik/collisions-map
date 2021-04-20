@@ -1,7 +1,7 @@
 # collisions-map
 This web application displays a map of the motor vehicle collisions of the city of New York, filtered by borough. Based on the following dataset: https://data.cityofnewyork.us/Public-Safety/Motor-Vehicle-Collisions-Crashes/h9gi-nx95
 
-Developed using flask framework and folium
+Developed using flask framework and folium.
 
 ### Prerequisite
 
