@@ -21,6 +21,8 @@ pip install requests
 pip install pandas
 pip install folium
 pip install flask
+pip install Flask-SQLAlchemy
+pip install SQLAlchemy
 ```
 ### How to run the project
 ```sh
