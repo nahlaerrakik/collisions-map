@@ -4,9 +4,6 @@ import json
 import requests
 import pandas as pd
 from http import HTTPStatus
-from io import BytesIO, StringIO
-from zipfile import ZipFile
-from urllib.request import urlopen
 
 from . import db
 
